@@ -1,0 +1,8 @@
+  <div className="table-container pullup  vscrola"  id="scrollableDiv">
+                <InfiniteScroll
+                        dataLength={facilities.length}
+                        next={getFacilities}
+                        hasMore={total>facilities.length}
+                        loader={<h4>Loading...</h4>}
+                        scrollableTarget="scrollableDiv"
+                    >
